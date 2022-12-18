@@ -1,0 +1,31 @@
+.card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    max-width: 343px;
+    &__img {
+        width: 100%;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        object-fit: cover;
+        height: 220px;
+    }
+
+    &__content {
+        padding: 1rem 1.8rem;
+    }
+
+    &__title {
+        color: var(--very-dark-grayish-blue);
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: .9rem;
+        color: var(--desaturated-dark-blue);
+        line-height: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}

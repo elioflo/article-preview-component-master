@@ -1,0 +1,12 @@
+.contact {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
+  display: none;
+  align-items: center;
+  gap: 1.1rem;
+  background-color: var(--very-dark-grayish-blue);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}

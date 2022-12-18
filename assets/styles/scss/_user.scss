@@ -1,0 +1,23 @@
+.user {
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+
+  &__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  &__info {
+    font-size: 0.9rem;
+    color: var(--very-dark-grayish-blue);
+    line-height: 1.2rem;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+}
