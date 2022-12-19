@@ -4,11 +4,12 @@
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   padding: 1rem 1.8rem;
-  padding-top: 0;
+  padding-bottom: 1.4rem;
+  position: relative;
 
   &--dark {
     background-color: var(--very-dark-grayish-blue);
-    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   &__btn {
@@ -18,7 +19,18 @@
     margin-left: auto;
     background-color: var(--light-grayish-blue);
     &--clicked {
-        background-color: var(--desaturated-dark-blue);
+      background-color: var(--desaturated-dark-blue);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 2rem 2.5rem;
+    padding-top: 1.5rem;
+
+    &--dark {
+      background-color: unset;
     }
   }
 }

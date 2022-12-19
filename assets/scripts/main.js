@@ -1,22 +1,10 @@
 const btn = document.getElementById('btn')
-let toggleBtn = false
+const toggle = document.getElementsByClassName('toggle')[0]
 
 btn.addEventListener('click',()=>{
-    const toggle = document.getElementsByClassName('toggle')[0]
-    if(toggleBtn){
-        toggle.classList.remove('toggle--dark')
-        toggle.getElementsByClassName('contact')[0].style.display = 'none'
-        toggle.getElementsByClassName('user')[0].style.display = 'flex'
-        btn.getElementsByTagName('img')[0].src = './assets/images/icon-share-dark.svg'
-        btn.classList.remove('toggle__btn--clicked')
-    }else{
-        toggle.classList.add('toggle--dark')
-        toggle.getElementsByClassName('user')[0].style.display = 'none'
-        toggle.getElementsByClassName('contact')[0].style.display = 'flex'
-        btn.getElementsByTagName('img')[0].src = './assets/images/icon-share-white.svg'
-        btn.classList.add('toggle__btn--clicked')
-    }
-
-    toggleBtn = !toggleBtn
+    toggle.classList.toggle('toggle--dark')
+    toggle.getElementsByClassName('user')[0].classList.toggle('user--clicked')
+    toggle.getElementsByClassName('contact')[0].classList.toggle('contact--clicked')
+    btn.getElementsByTagName('img')[0].src = btn.classList.toggle('toggle__btn--clicked') ? './assets/images/icon-share-white.svg':'./assets/images/icon-share-dark.svg'
 })
 

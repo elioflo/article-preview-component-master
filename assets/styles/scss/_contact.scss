@@ -9,4 +9,38 @@
   background-color: var(--very-dark-grayish-blue);
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+
+  &--clicked {
+    display: flex;
+  }
+
+  @media screen and (min-width: 769px) {
+
+    &--clicked {
+      display: flex;
+      min-width: 255px;
+      height: 55px;
+      gap: 1rem;
+      position: absolute;
+      right: -4.6rem;
+      top: -3.6rem;
+      justify-content: center;
+      border-radius: var(--border-radius);
+    }
+
+    &::before {
+      $arrow: .8rem;
+      content: "";
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-top: $arrow solid var(--very-dark-grayish-blue);
+      border-left: $arrow solid transparent;
+      border-right: $arrow solid transparent;
+      border-bottom: 0 solid transparent;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -$arrow;
+    }
+  }
 }

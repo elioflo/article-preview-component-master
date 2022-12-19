@@ -4,6 +4,10 @@
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 
+  &--clicked {
+    display: none;
+  }
+
   &__img {
     width: 2.5rem;
     height: 2.5rem;
@@ -12,12 +16,26 @@
   }
 
   &__info {
-    font-size: 0.9rem;
-    color: var(--very-dark-grayish-blue);
+    font-size: 0.89rem;
+    color: var(--desaturated-dark-blue);
     line-height: 1.2rem;
+    font-weight: 500;
+    margin: 0;
   }
 
   &__name {
+    color: var(--very-dark-grayish-blue);
     font-weight: 700;
+  }
+
+  @media screen and (min-width: 769px) {
+
+    &__info {
+      font-size: .85rem;
+    }
+
+    &--clicked {
+      display: flex;
+    }
   }
 }
