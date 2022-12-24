@@ -18,8 +18,10 @@
     padding: 0.5rem;
     margin-left: auto;
     background-color: var(--light-grayish-blue);
+    color: var(--very-dark-grayish-blue);
     &--clicked {
       background-color: var(--desaturated-dark-blue);
+      color: var(--light-grayish-blue);
     }
   }
 
